@@ -18,7 +18,7 @@ extension UIWebView {
 </pre>
 Then call like this:<br>
 <pre>
-    NSObject.swizzleMethod(UIWebView.self,originSelector: "loadRequest:",newSelector:"toReplaceLoadRequest:")
+NSObject.swizzleMethod(UIWebView.self,originSelector: "loadRequest:",newSelector:"toReplaceLoadRequest:")
 </pre>
     
     
@@ -34,5 +34,5 @@ extension UIWebView {
     </pre>
 Then call like this:<br>
 <pre>
-    NSObject.swizzleInstanceMethodWithClassName("UIWebView",originClassNamePart2: "",originClassNSelectorPart1: "webView:di",originClassNSelectorPart2: "dFirstLayoutInFrame:",newClass: UIWebView.self,newSelector: "mttDidFirstLayoutInFrame:frame:")
+NSObject.swizzleInstanceMethodWithClassName("UIWebView",originClassNamePart2: "",originClassNSelectorPart1: "webView:di",originClassNSelectorPart2: "dFirstLayoutInFrame:",newClass: UIWebView.self,newSelector: "mttDidFirstLayoutInFrame:frame:")
 </pre>
